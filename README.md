@@ -18,7 +18,7 @@ getCharset('windows-1251') // => undefined
 
 // if you want convert buffer to another encoding e.g. in utf8 you may use iconv or similar thing, to resolve aliases in charsets
 getCharset.resolveAliasCharset('cswindows1251') // => 'windows-1251'
-
+```
 
 Other things
 ------------
