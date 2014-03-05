@@ -11,4 +11,4 @@ module.exports = function(httpCharset) {
 	}
 }
 
-exports.resolveAliasCharset = ianaCharsets.mainCharset;
+module.exports.resolveAliasCharset = ianaCharsets.mainCharset;
