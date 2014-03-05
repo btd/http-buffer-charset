@@ -1,0 +1,31 @@
+{
+  "name": "http-buffer-charset",
+  "version": "0.0.1",
+  "description": "By http charset it return according supported node Buffer charset.",
+  "main": "index.js",
+  "dependencies": {
+    "csv": "~0.3.7"
+  },
+  "devDependencies": {
+    "csv": "^0.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btd/http-buffer-charset"
+  },
+  "keywords": [
+    "http",
+    "iana",
+    "buffer",
+    "charset"
+  ],
+  "author": "Denis Bardadym",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btd/http-buffer-charset/issues"
+  },
+  "homepage": "https://github.com/btd/http-buffer-charset"
+}

@@ -1,0 +1,1150 @@
+exports.mainCharset = function(_charset) {
+var charset = _charset.toLowerCase();
+switch(charset) {
+case "utf-8":
+case "csutf8":
+	return "UTF-8";
+case "us-ascii":
+case "iso-ir-6":
+case "ansi_x3.4-1968":
+case "ansi_x3.4-1986":
+case "iso_646.irv:1991":
+case "iso646-us":
+case "us-ascii":
+case "us":
+case "ibm367":
+case "cp367":
+case "csascii":
+	return "US-ASCII";
+case "utf-16le":
+case "csutf16le":
+	return "UTF-16LE";
+case "windows-874":
+case "cswindows874":
+	return "windows-874";
+case "windows-1250":
+case "cswindows1250":
+	return "windows-1250";
+case "windows-1251":
+case "cswindows1251":
+	return "windows-1251";
+case "windows-1258":
+case "cswindows1258":
+	return "windows-1258";
+case "windows-1253":
+case "cswindows1253":
+	return "windows-1253";
+case "windows-1254":
+case "cswindows1254":
+	return "windows-1254";
+case "windows-1255":
+case "cswindows1255":
+	return "windows-1255";
+case "windows-1256":
+case "cswindows1256":
+	return "windows-1256";
+case "windows-1257":
+case "cswindows1257":
+	return "windows-1257";
+case "windows-1252":
+case "cswindows1252":
+	return "windows-1252";
+case "jis_encoding":
+case "csjisencoding":
+	return "JIS_Encoding";
+case "shift_jis":
+case "ms_kanji":
+case "csshiftjis":
+	return "Shift_JIS";
+case "extended_unix_code_packed_format_for_japanese":
+case "cseucpkdfmtjapanese":
+case "euc-jp":
+	return "Extended_UNIX_Code_Packed_Format_for_Japanese";
+case "extended_unix_code_fixed_width_for_japanese":
+case "cseucfixwidjapanese":
+	return "Extended_UNIX_Code_Fixed_Width_for_Japanese";
+case "bs_4730":
+case "iso-ir-4":
+case "iso646-gb":
+case "gb":
+case "uk":
+case "csiso4unitedkingdom":
+	return "BS_4730";
+case "sen_850200_c":
+case "iso-ir-11":
+case "iso646-se2":
+case "se2":
+case "csiso11swedishfornames":
+	return "SEN_850200_C";
+case "it":
+case "iso-ir-15":
+case "iso646-it":
+case "csiso15italian":
+	return "IT";
+case "es":
+case "iso-ir-17":
+case "iso646-es":
+case "csiso17spanish":
+	return "ES";
+case "din_66003":
+case "iso-ir-21":
+case "de":
+case "iso646-de":
+case "csiso21german":
+	return "DIN_66003";
+case "ns_4551-1":
+case "iso-ir-60":
+case "iso646-no":
+case "no":
+case "csiso60danishnorwegian":
+case "csiso60norwegian1":
+	return "NS_4551-1";
+case "nf_z_62-010":
+case "iso-ir-69":
+case "iso646-fr":
+case "fr":
+case "csiso69french":
+	return "NF_Z_62-010";
+case "iso-10646-utf-1":
+case "csiso10646utf1":
+	return "ISO-10646-UTF-1";
+case "iso_646.basic:1983":
+case "ref":
+case "csiso646basic1983":
+	return "ISO_646.basic:1983";
+case "invariant":
+case "csinvariant":
+	return "INVARIANT";
+case "iso_646.irv:1983":
+case "iso-ir-2":
+case "irv":
+case "csiso2intlrefversion":
+	return "ISO_646.irv:1983";
+case "nats-sefi":
+case "iso-ir-8-1":
+case "csnatssefi":
+	return "NATS-SEFI";
+case "nats-sefi-add":
+case "iso-ir-8-2":
+case "csnatssefiadd":
+	return "NATS-SEFI-ADD";
+case "nats-dano":
+case "iso-ir-9-1":
+case "csnatsdano":
+	return "NATS-DANO";
+case "nats-dano-add":
+case "iso-ir-9-2":
+case "csnatsdanoadd":
+	return "NATS-DANO-ADD";
+case "sen_850200_b":
+case "iso-ir-10":
+case "fi":
+case "iso646-fi":
+case "iso646-se":
+case "se":
+case "csiso10swedish":
+	return "SEN_850200_B";
+case "ks_c_5601-1987":
+case "iso-ir-149":
+case "ks_c_5601-1989":
+case "ksc_5601":
+case "korean":
+case "csksc56011987":
+	return "KS_C_5601-1987";
+case "iso-2022-kr":
+case "csiso2022kr":
+	return "ISO-2022-KR";
+case "euc-kr":
+case "cseuckr":
+	return "EUC-KR";
+case "iso-2022-jp":
+case "csiso2022jp":
+	return "ISO-2022-JP";
+case "iso-2022-jp-2":
+case "csiso2022jp2":
+	return "ISO-2022-JP-2";
+case "jis_c6220-1969-jp":
+case "jis_c6220-1969":
+case "iso-ir-13":
+case "katakana":
+case "x0201-7":
+case "csiso13jisc6220jp":
+	return "JIS_C6220-1969-jp";
+case "jis_c6220-1969-ro":
+case "iso-ir-14":
+case "jp":
+case "iso646-jp":
+case "csiso14jisc6220ro":
+	return "JIS_C6220-1969-ro";
+case "pt":
+case "iso-ir-16":
+case "iso646-pt":
+case "csiso16portuguese":
+	return "PT";
+case "greek7-old":
+case "iso-ir-18":
+case "csiso18greek7old":
+	return "greek7-old";
+case "latin-greek":
+case "iso-ir-19":
+case "csiso19latingreek":
+	return "latin-greek";
+case "nf_z_62-010_(1973)":
+case "iso-ir-25":
+case "iso646-fr1":
+case "csiso25french":
+	return "NF_Z_62-010_(1973)";
+case "latin-greek-1":
+case "iso-ir-27":
+case "csiso27latingreek1":
+	return "Latin-greek-1";
+case "iso_5427":
+case "iso-ir-37":
+case "csiso5427cyrillic":
+	return "ISO_5427";
+case "jis_c6226-1978":
+case "iso-ir-42":
+case "csiso42jisc62261978":
+	return "JIS_C6226-1978";
+case "bs_viewdata":
+case "iso-ir-47":
+case "csiso47bsviewdata":
+	return "BS_viewdata";
+case "inis":
+case "iso-ir-49":
+case "csiso49inis":
+	return "INIS";
+case "inis-8":
+case "iso-ir-50":
+case "csiso50inis8":
+	return "INIS-8";
+case "inis-cyrillic":
+case "iso-ir-51":
+case "csiso51iniscyrillic":
+	return "INIS-cyrillic";
+case "iso_5427:1981":
+case "iso-ir-54":
+case "iso5427cyrillic1981":
+case "csiso54271981":
+	return "ISO_5427:1981";
+case "iso_5428:1980":
+case "iso-ir-55":
+case "csiso5428greek":
+	return "ISO_5428:1980";
+case "gb_1988-80":
+case "iso-ir-57":
+case "cn":
+case "iso646-cn":
+case "csiso57gb1988":
+	return "GB_1988-80";
+case "gb_2312-80":
+case "iso-ir-58":
+case "chinese":
+case "csiso58gb231280":
+	return "GB_2312-80";
+case "ns_4551-2":
+case "iso646-no2":
+case "iso-ir-61":
+case "no2":
+case "csiso61norwegian2":
+	return "NS_4551-2";
+case "videotex-suppl":
+case "iso-ir-70":
+case "csiso70videotexsupp1":
+	return "videotex-suppl";
+case "pt2":
+case "iso-ir-84":
+case "iso646-pt2":
+case "csiso84portuguese2":
+	return "PT2";
+case "es2":
+case "iso-ir-85":
+case "iso646-es2":
+case "csiso85spanish2":
+	return "ES2";
+case "msz_7795.3":
+case "iso-ir-86":
+case "iso646-hu":
+case "hu":
+case "csiso86hungarian":
+	return "MSZ_7795.3";
+case "jis_c6226-1983":
+case "iso-ir-87":
+case "x0208":
+case "jis_x0208-1983":
+case "csiso87jisx0208":
+	return "JIS_C6226-1983";
+case "greek7":
+case "iso-ir-88":
+case "csiso88greek7":
+	return "greek7";
+case "asmo_449":
+case "iso_9036":
+case "arabic7":
+case "iso-ir-89":
+case "csiso89asmo449":
+	return "ASMO_449";
+case "iso-ir-90":
+case "csiso90":
+	return "iso-ir-90";
+case "jis_c6229-1984-a":
+case "iso-ir-91":
+case "jp-ocr-a":
+case "csiso91jisc62291984a":
+	return "JIS_C6229-1984-a";
+case "jis_c6229-1984-b":
+case "iso-ir-92":
+case "iso646-jp-ocr-b":
+case "jp-ocr-b":
+case "csiso92jisc62991984b":
+	return "JIS_C6229-1984-b";
+case "jis_c6229-1984-b-add":
+case "iso-ir-93":
+case "jp-ocr-b-add":
+case "csiso93jis62291984badd":
+	return "JIS_C6229-1984-b-add";
+case "jis_c6229-1984-hand":
+case "iso-ir-94":
+case "jp-ocr-hand":
+case "csiso94jis62291984hand":
+	return "JIS_C6229-1984-hand";
+case "jis_c6229-1984-hand-add":
+case "iso-ir-95":
+case "jp-ocr-hand-add":
+case "csiso95jis62291984handadd":
+	return "JIS_C6229-1984-hand-add";
+case "jis_c6229-1984-kana":
+case "iso-ir-96":
+case "csiso96jisc62291984kana":
+	return "JIS_C6229-1984-kana";
+case "iso_2033-1983":
+case "iso-ir-98":
+case "e13b":
+case "csiso2033":
+	return "ISO_2033-1983";
+case "ansi_x3.110-1983":
+case "iso-ir-99":
+case "csa_t500-1983":
+case "naplps":
+case "csiso99naplps":
+	return "ANSI_X3.110-1983";
+case "t.61-7bit":
+case "iso-ir-102":
+case "csiso102t617bit":
+	return "T.61-7bit";
+case "t.61-8bit":
+case "t.61":
+case "iso-ir-103":
+case "csiso103t618bit":
+	return "T.61-8bit";
+case "ecma-cyrillic":
+case "iso-ir-111":
+case "koi8-e":
+case "csiso111ecmacyrillic":
+	return "ECMA-cyrillic";
+case "csa_z243.4-1985-1":
+case "iso-ir-121":
+case "iso646-ca":
+case "csa7-1":
+case "csa71":
+case "ca":
+case "csiso121canadian1":
+	return "CSA_Z243.4-1985-1";
+case "csa_z243.4-1985-2":
+case "iso-ir-122":
+case "iso646-ca2":
+case "csa7-2":
+case "csa72":
+case "csiso122canadian2":
+	return "CSA_Z243.4-1985-2";
+case "csa_z243.4-1985-gr":
+case "iso-ir-123":
+case "csiso123csaz24341985gr":
+	return "CSA_Z243.4-1985-gr";
+case "iso_8859-6-e":
+case "csiso88596e":
+case "iso-8859-6-e":
+	return "ISO_8859-6-E";
+case "iso_8859-6-i":
+case "csiso88596i":
+case "iso-8859-6-i":
+	return "ISO_8859-6-I";
+case "t.101-g2":
+case "iso-ir-128":
+case "csiso128t101g2":
+	return "T.101-G2";
+case "iso_8859-8-e":
+case "csiso88598e":
+case "iso-8859-8-e":
+	return "ISO_8859-8-E";
+case "iso_8859-8-i":
+case "csiso88598i":
+case "iso-8859-8-i":
+	return "ISO_8859-8-I";
+case "csn_369103":
+case "iso-ir-139":
+case "csiso139csn369103":
+	return "CSN_369103";
+case "jus_i.b1.002":
+case "iso-ir-141":
+case "iso646-yu":
+case "js":
+case "yu":
+case "csiso141jusib1002":
+	return "JUS_I.B1.002";
+case "iec_p27-1":
+case "iso-ir-143":
+case "csiso143iecp271":
+	return "IEC_P27-1";
+case "jus_i.b1.003-serb":
+case "iso-ir-146":
+case "serbian":
+case "csiso146serbian":
+	return "JUS_I.B1.003-serb";
+case "jus_i.b1.003-mac":
+case "macedonian":
+case "iso-ir-147":
+case "csiso147macedonian":
+	return "JUS_I.B1.003-mac";
+case "greek-ccitt":
+case "iso-ir-150":
+case "csiso150":
+case "csiso150greekccitt":
+	return "greek-ccitt";
+case "nc_nc00-10:81":
+case "cuba":
+case "iso-ir-151":
+case "iso646-cu":
+case "csiso151cuba":
+	return "NC_NC00-10:81";
+case "iso_6937-2-25":
+case "iso-ir-152":
+case "csiso6937add":
+	return "ISO_6937-2-25";
+case "gost_19768-74":
+case "st_sev_358-88":
+case "iso-ir-153":
+case "csiso153gost1976874":
+	return "GOST_19768-74";
+case "iso_8859-supp":
+case "iso-ir-154":
+case "latin1-2-5":
+case "csiso8859supp":
+	return "ISO_8859-supp";
+case "iso_10367-box":
+case "iso-ir-155":
+case "csiso10367box":
+	return "ISO_10367-box";
+case "latin-lap":
+case "lap":
+case "iso-ir-158":
+case "csiso158lap":
+	return "latin-lap";
+case "jis_x0212-1990":
+case "x0212":
+case "iso-ir-159":
+case "csiso159jisx02121990":
+	return "JIS_X0212-1990";
+case "ds_2089":
+case "ds2089":
+case "iso646-dk":
+case "dk":
+case "csiso646danish":
+	return "DS_2089";
+case "us-dk":
+case "csusdk":
+	return "us-dk";
+case "dk-us":
+case "csdkus":
+	return "dk-us";
+case "ksc5636":
+case "iso646-kr":
+case "csksc5636":
+	return "KSC5636";
+case "unicode-1-1-utf-7":
+case "csunicode11utf7":
+	return "UNICODE-1-1-UTF-7";
+case "iso-2022-cn":
+case "csiso2022cn":
+	return "ISO-2022-CN";
+case "iso-2022-cn-ext":
+case "csiso2022cnext":
+	return "ISO-2022-CN-EXT";
+case "cp50220":
+case "cscp50220":
+	return "CP50220";
+case "iso-8859-13":
+case "csiso885913":
+	return "ISO-8859-13";
+case "iso-8859-14":
+case "iso-ir-199":
+case "iso_8859-14:1998":
+case "iso_8859-14":
+case "latin8":
+case "iso-celtic":
+case "l8":
+case "csiso885914":
+	return "ISO-8859-14";
+case "iso-8859-15":
+case "iso_8859-15":
+case "latin-9":
+case "csiso885915":
+	return "ISO-8859-15";
+case "iso-8859-16":
+case "iso-ir-226":
+case "iso_8859-16:2001":
+case "iso_8859-16":
+case "latin10":
+case "l10":
+case "csiso885916":
+	return "ISO-8859-16";
+case "gbk":
+case "cp936":
+case "ms936":
+case "windows-936":
+case "csgbk":
+	return "GBK";
+case "gb18030":
+case "csgb18030":
+	return "GB18030";
+case "osd_ebcdic_df04_15":
+case "csosdebcdicdf0415":
+	return "OSD_EBCDIC_DF04_15";
+case "osd_ebcdic_df03_irv":
+case "csosdebcdicdf03irv":
+	return "OSD_EBCDIC_DF03_IRV";
+case "osd_ebcdic_df04_1":
+case "csosdebcdicdf041":
+	return "OSD_EBCDIC_DF04_1";
+case "iso-11548-1":
+case "iso_11548-1":
+case "iso_tr_11548-1":
+case "csiso115481":
+	return "ISO-11548-1";
+case "kz-1048":
+case "strk1048-2002":
+case "rk1048":
+case "cskz1048":
+	return "KZ-1048";
+case "iso-10646-ucs-2":
+case "csunicode":
+	return "ISO-10646-UCS-2";
+case "iso-10646-ucs-4":
+case "csucs4":
+	return "ISO-10646-UCS-4";
+case "iso-10646-ucs-basic":
+case "csunicodeascii":
+	return "ISO-10646-UCS-Basic";
+case "iso-10646-unicode-latin1":
+case "csunicodelatin1":
+case "iso-10646":
+	return "ISO-10646-Unicode-Latin1";
+case "iso-10646-j-1":
+case "csunicodejapanese":
+	return "ISO-10646-J-1";
+case "iso-unicode-ibm-1261":
+case "csunicodeibm1261":
+	return "ISO-Unicode-IBM-1261";
+case "iso-unicode-ibm-1268":
+case "csunicodeibm1268":
+	return "ISO-Unicode-IBM-1268";
+case "iso-unicode-ibm-1276":
+case "csunicodeibm1276":
+	return "ISO-Unicode-IBM-1276";
+case "iso-unicode-ibm-1264":
+case "csunicodeibm1264":
+	return "ISO-Unicode-IBM-1264";
+case "iso-unicode-ibm-1265":
+case "csunicodeibm1265":
+	return "ISO-Unicode-IBM-1265";
+case "unicode-1-1":
+case "csunicode11":
+	return "UNICODE-1-1";
+case "scsu":
+case "csscsu":
+	return "SCSU";
+case "utf-7":
+case "csutf7":
+	return "UTF-7";
+case "iso_8859-1:1987":
+case "iso-ir-100":
+case "iso_8859-1":
+case "iso-8859-1":
+case "latin1":
+case "l1":
+case "ibm819":
+case "cp819":
+case "csisolatin1":
+	return "ISO_8859-1:1987";
+case "iso_8859-2:1987":
+case "iso-ir-101":
+case "iso_8859-2":
+case "iso-8859-2":
+case "latin2":
+case "l2":
+case "csisolatin2":
+	return "ISO_8859-2:1987";
+case "utf-16":
+case "csutf16":
+	return "UTF-16";
+case "cesu-8":
+case "cscesu8":
+case "cscesu-8":
+	return "CESU-8";
+case "utf-32":
+case "csutf32":
+	return "UTF-32";
+case "utf-32be":
+case "csutf32be":
+	return "UTF-32BE";
+case "utf-32le":
+case "csutf32le":
+	return "UTF-32LE";
+case "bocu-1":
+case "csbocu1":
+case "csbocu-1":
+	return "BOCU-1";
+case "iso-8859-1-windows-3.0-latin-1":
+case "cswindows30latin1":
+	return "ISO-8859-1-Windows-3.0-Latin-1";
+case "iso-8859-1-windows-3.1-latin-1":
+case "cswindows31latin1":
+	return "ISO-8859-1-Windows-3.1-Latin-1";
+case "iso-8859-2-windows-latin-2":
+case "cswindows31latin2":
+	return "ISO-8859-2-Windows-Latin-2";
+case "iso-8859-9-windows-latin-5":
+case "cswindows31latin5":
+	return "ISO-8859-9-Windows-Latin-5";
+case "hp-roman8":
+case "roman8":
+case "r8":
+case "cshproman8":
+	return "hp-roman8";
+case "adobe-standard-encoding":
+case "csadobestandardencoding":
+	return "Adobe-Standard-Encoding";
+case "ventura-us":
+case "csventuraus":
+	return "Ventura-US";
+case "ventura-international":
+case "csventurainternational":
+	return "Ventura-International";
+case "dec-mcs":
+case "dec":
+case "csdecmcs":
+	return "DEC-MCS";
+case "ibm850":
+case "cp850":
+case "850":
+case "cspc850multilingual":
+	return "IBM850";
+case "pc8-danish-norwegian":
+case "cspc8danishnorwegian":
+	return "PC8-Danish-Norwegian";
+case "ibm862":
+case "cp862":
+case "862":
+case "cspc862latinhebrew":
+	return "IBM862";
+case "pc8-turkish":
+case "cspc8turkish":
+	return "PC8-Turkish";
+case "ibm-symbols":
+case "csibmsymbols":
+	return "IBM-Symbols";
+case "ibm-thai":
+case "csibmthai":
+	return "IBM-Thai";
+case "hp-legal":
+case "cshplegal":
+	return "HP-Legal";
+case "hp-pi-font":
+case "cshppifont":
+	return "HP-Pi-font";
+case "hp-math8":
+case "cshpmath8":
+	return "HP-Math8";
+case "adobe-symbol-encoding":
+case "cshppsmath":
+	return "Adobe-Symbol-Encoding";
+case "hp-desktop":
+case "cshpdesktop":
+	return "HP-DeskTop";
+case "ventura-math":
+case "csventuramath":
+	return "Ventura-Math";
+case "microsoft-publishing":
+case "csmicrosoftpublishing":
+	return "Microsoft-Publishing";
+case "windows-31j":
+case "cswindows31j":
+	return "Windows-31J";
+case "gb2312":
+case "csgb2312":
+	return "GB2312";
+case "big5":
+case "csbig5":
+	return "Big5";
+case "macintosh":
+case "mac":
+case "csmacintosh":
+	return "macintosh";
+case "ibm037":
+case "cp037":
+case "ebcdic-cp-us":
+case "ebcdic-cp-ca":
+case "ebcdic-cp-wt":
+case "ebcdic-cp-nl":
+case "csibm037":
+	return "IBM037";
+case "ibm038":
+case "ebcdic-int":
+case "cp038":
+case "csibm038":
+	return "IBM038";
+case "ibm273":
+case "cp273":
+case "csibm273":
+	return "IBM273";
+case "ibm274":
+case "ebcdic-be":
+case "cp274":
+case "csibm274":
+	return "IBM274";
+case "ibm275":
+case "ebcdic-br":
+case "cp275":
+case "csibm275":
+	return "IBM275";
+case "ibm277":
+case "ebcdic-cp-dk":
+case "ebcdic-cp-no":
+case "csibm277":
+	return "IBM277";
+case "ibm278":
+case "cp278":
+case "ebcdic-cp-fi":
+case "ebcdic-cp-se":
+case "csibm278":
+	return "IBM278";
+case "ibm280":
+case "cp280":
+case "ebcdic-cp-it":
+case "csibm280":
+	return "IBM280";
+case "ibm281":
+case "ebcdic-jp-e":
+case "cp281":
+case "csibm281":
+	return "IBM281";
+case "ibm284":
+case "cp284":
+case "ebcdic-cp-es":
+case "csibm284":
+	return "IBM284";
+case "ibm285":
+case "cp285":
+case "ebcdic-cp-gb":
+case "csibm285":
+	return "IBM285";
+case "ibm290":
+case "cp290":
+case "ebcdic-jp-kana":
+case "csibm290":
+	return "IBM290";
+case "ibm297":
+case "cp297":
+case "ebcdic-cp-fr":
+case "csibm297":
+	return "IBM297";
+case "ibm420":
+case "cp420":
+case "ebcdic-cp-ar1":
+case "csibm420":
+	return "IBM420";
+case "ibm423":
+case "cp423":
+case "ebcdic-cp-gr":
+case "csibm423":
+	return "IBM423";
+case "ibm424":
+case "cp424":
+case "ebcdic-cp-he":
+case "csibm424":
+	return "IBM424";
+case "ibm437":
+case "cp437":
+case "437":
+case "cspc8codepage437":
+	return "IBM437";
+case "ibm500":
+case "cp500":
+case "ebcdic-cp-be":
+case "ebcdic-cp-ch":
+case "csibm500":
+	return "IBM500";
+case "ibm851":
+case "cp851":
+case "851":
+case "csibm851":
+	return "IBM851";
+case "ibm852":
+case "cp852":
+case "852":
+case "cspcp852":
+	return "IBM852";
+case "ibm855":
+case "cp855":
+case "855":
+case "csibm855":
+	return "IBM855";
+case "ibm857":
+case "cp857":
+case "857":
+case "csibm857":
+	return "IBM857";
+case "ibm860":
+case "cp860":
+case "860":
+case "csibm860":
+	return "IBM860";
+case "ibm861":
+case "cp861":
+case "861":
+case "cp-is":
+case "csibm861":
+	return "IBM861";
+case "ibm863":
+case "cp863":
+case "863":
+case "csibm863":
+	return "IBM863";
+case "ibm864":
+case "cp864":
+case "csibm864":
+	return "IBM864";
+case "ibm865":
+case "cp865":
+case "865":
+case "csibm865":
+	return "IBM865";
+case "ibm868":
+case "cp868":
+case "cp-ar":
+case "csibm868":
+	return "IBM868";
+case "ibm869":
+case "cp869":
+case "869":
+case "cp-gr":
+case "csibm869":
+	return "IBM869";
+case "ibm870":
+case "cp870":
+case "ebcdic-cp-roece":
+case "ebcdic-cp-yu":
+case "csibm870":
+	return "IBM870";
+case "ibm871":
+case "cp871":
+case "ebcdic-cp-is":
+case "csibm871":
+	return "IBM871";
+case "ibm880":
+case "cp880":
+case "ebcdic-cyrillic":
+case "csibm880":
+	return "IBM880";
+case "ibm891":
+case "cp891":
+case "csibm891":
+	return "IBM891";
+case "ibm903":
+case "cp903":
+case "csibm903":
+	return "IBM903";
+case "ibm904":
+case "cp904":
+case "904":
+case "csibbm904":
+	return "IBM904";
+case "ibm905":
+case "cp905":
+case "ebcdic-cp-tr":
+case "csibm905":
+	return "IBM905";
+case "ibm918":
+case "cp918":
+case "ebcdic-cp-ar2":
+case "csibm918":
+	return "IBM918";
+case "ibm1026":
+case "cp1026":
+case "csibm1026":
+	return "IBM1026";
+case "ebcdic-at-de":
+case "csibmebcdicatde":
+	return "EBCDIC-AT-DE";
+case "ebcdic-at-de-a":
+case "csebcdicatdea":
+	return "EBCDIC-AT-DE-A";
+case "ebcdic-ca-fr":
+case "csebcdiccafr":
+	return "EBCDIC-CA-FR";
+case "ebcdic-dk-no":
+case "csebcdicdkno":
+	return "EBCDIC-DK-NO";
+case "ebcdic-dk-no-a":
+case "csebcdicdknoa":
+	return "EBCDIC-DK-NO-A";
+case "ebcdic-fi-se":
+case "csebcdicfise":
+	return "EBCDIC-FI-SE";
+case "ebcdic-fi-se-a":
+case "csebcdicfisea":
+	return "EBCDIC-FI-SE-A";
+case "ebcdic-fr":
+case "csebcdicfr":
+	return "EBCDIC-FR";
+case "ebcdic-it":
+case "csebcdicit":
+	return "EBCDIC-IT";
+case "ebcdic-pt":
+case "csebcdicpt":
+	return "EBCDIC-PT";
+case "ebcdic-es":
+case "csebcdices":
+	return "EBCDIC-ES";
+case "ebcdic-es-a":
+case "csebcdicesa":
+	return "EBCDIC-ES-A";
+case "ebcdic-es-s":
+case "csebcdicess":
+	return "EBCDIC-ES-S";
+case "ebcdic-uk":
+case "csebcdicuk":
+	return "EBCDIC-UK";
+case "ebcdic-us":
+case "csebcdicus":
+	return "EBCDIC-US";
+case "unknown-8bit":
+case "csunknown8bit":
+	return "UNKNOWN-8BIT";
+case "mnemonic":
+case "csmnemonic":
+	return "MNEMONIC";
+case "mnem":
+case "csmnem":
+	return "MNEM";
+case "viscii":
+case "csviscii":
+	return "VISCII";
+case "viqr":
+case "csviqr":
+	return "VIQR";
+case "koi8-r":
+case "cskoi8r":
+	return "KOI8-R";
+case "hz-gb-2312":
+case "":
+	return "HZ-GB-2312";
+case "ibm866":
+case "cp866":
+case "866":
+case "csibm866":
+	return "IBM866";
+case "ibm775":
+case "cp775":
+case "cspc775baltic":
+	return "IBM775";
+case "koi8-u":
+case "cskoi8u":
+	return "KOI8-U";
+case "ibm00858":
+case "ccsid00858":
+case "cp00858":
+case "pc-multilingual-850+euro":
+case "csibm00858":
+	return "IBM00858";
+case "ibm00924":
+case "ccsid00924":
+case "cp00924":
+case "ebcdic-latin9--euro":
+case "csibm00924":
+	return "IBM00924";
+case "ibm01140":
+case "ccsid01140":
+case "cp01140":
+case "ebcdic-us-37+euro":
+case "csibm01140":
+	return "IBM01140";
+case "ibm01141":
+case "ccsid01141":
+case "cp01141":
+case "ebcdic-de-273+euro":
+case "csibm01141":
+	return "IBM01141";
+case "ibm01142":
+case "ccsid01142":
+case "cp01142":
+case "ebcdic-dk-277+euro":
+case "ebcdic-no-277+euro":
+case "csibm01142":
+	return "IBM01142";
+case "ibm01143":
+case "ccsid01143":
+case "cp01143":
+case "ebcdic-fi-278+euro":
+case "ebcdic-se-278+euro":
+case "csibm01143":
+	return "IBM01143";
+case "ibm01144":
+case "ccsid01144":
+case "cp01144":
+case "ebcdic-it-280+euro":
+case "csibm01144":
+	return "IBM01144";
+case "ibm01145":
+case "ccsid01145":
+case "cp01145":
+case "ebcdic-es-284+euro":
+case "csibm01145":
+	return "IBM01145";
+case "ibm01146":
+case "ccsid01146":
+case "cp01146":
+case "ebcdic-gb-285+euro":
+case "csibm01146":
+	return "IBM01146";
+case "ibm01147":
+case "ccsid01147":
+case "cp01147":
+case "ebcdic-fr-297+euro":
+case "csibm01147":
+	return "IBM01147";
+case "ibm01148":
+case "ccsid01148":
+case "cp01148":
+case "ebcdic-international-500+euro":
+case "csibm01148":
+	return "IBM01148";
+case "ibm01149":
+case "ccsid01149":
+case "cp01149":
+case "ebcdic-is-871+euro":
+case "csibm01149":
+	return "IBM01149";
+case "big5-hkscs":
+case "csbig5hkscs":
+	return "Big5-HKSCS";
+case "ibm1047":
+case "ibm-1047":
+case "csibm1047":
+	return "IBM1047";
+case "ptcp154":
+case "csptcp154":
+case "pt154":
+case "cp154":
+case "cyrillic-asian":
+	return "PTCP154";
+case "amiga-1251":
+case "ami1251":
+case "amiga1251":
+case "ami-1251":
+case "csamiga1251":
+case "(aliases are provided for historical reasons and should not be used) [malyshev]":
+	return "Amiga-1251";
+case "koi7-switched":
+case "cskoi7switched":
+	return "KOI7-switched";
+case "brf":
+case "csbrf":
+	return "BRF";
+case "tscii":
+case "cstscii":
+	return "TSCII";
+case "cp51932":
+case "cscp51932":
+	return "CP51932";
+case "iso_8859-3:1988":
+case "iso-ir-109":
+case "iso_8859-3":
+case "iso-8859-3":
+case "latin3":
+case "l3":
+case "csisolatin3":
+	return "ISO_8859-3:1988";
+case "iso_8859-4:1988":
+case "iso-ir-110":
+case "iso_8859-4":
+case "iso-8859-4":
+case "latin4":
+case "l4":
+case "csisolatin4":
+	return "ISO_8859-4:1988";
+case "iso_8859-5:1988":
+case "iso-ir-144":
+case "iso_8859-5":
+case "iso-8859-5":
+case "cyrillic":
+case "csisolatincyrillic":
+	return "ISO_8859-5:1988";
+case "iso_8859-6:1987":
+case "iso-ir-127":
+case "iso_8859-6":
+case "iso-8859-6":
+case "ecma-114":
+case "asmo-708":
+case "arabic":
+case "csisolatinarabic":
+	return "ISO_8859-6:1987";
+case "iso_8859-7:1987":
+case "iso-ir-126":
+case "iso_8859-7":
+case "iso-8859-7":
+case "elot_928":
+case "ecma-118":
+case "greek":
+case "greek8":
+case "csisolatingreek":
+	return "ISO_8859-7:1987";
+case "iso_8859-8:1988":
+case "iso-ir-138":
+case "iso_8859-8":
+case "iso-8859-8":
+case "hebrew":
+case "csisolatinhebrew":
+	return "ISO_8859-8:1988";
+case "iso_8859-9:1989":
+case "iso-ir-148":
+case "iso_8859-9":
+case "iso-8859-9":
+case "latin5":
+case "l5":
+case "csisolatin5":
+	return "ISO_8859-9:1989";
+case "iso-8859-10":
+case "iso-ir-157":
+case "l6":
+case "iso_8859-10:1992":
+case "csisolatin6":
+case "latin6":
+	return "ISO-8859-10";
+case "iso_6937-2-add":
+case "iso-ir-142":
+case "csisotextcomm":
+	return "ISO_6937-2-add";
+case "jis_x0201":
+case "x0201":
+case "cshalfwidthkatakana":
+	return "JIS_X0201";
+case "tis-620":
+case "cstis620":
+case "iso-8859-11":
+	return "TIS-620";
+case "utf-16be":
+case "csutf16be":
+	return "UTF-16BE";
+}
+};
