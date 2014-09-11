@@ -1,10 +1,9 @@
 {
   "name": "http-buffer-charset",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "By http charset it return according supported node Buffer charset.",
   "main": "index.js",
   "dependencies": {
-    "csv": "~0.3.7"
   },
   "devDependencies": {
     "csv": "^0.3.7"
